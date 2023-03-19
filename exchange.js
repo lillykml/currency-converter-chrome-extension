@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const result = document.getElementById("result");
     const closeButton = document.getElementById("closeButton");
 
-    const apiKey= "MdANcUS3Q4meavVL2BqEbQ==jYijBPbvHQrCi72W";
+    const apiKey= "YOUR API KEY";
 
     if (convert) {
         convert.addEventListener('click', () => {
