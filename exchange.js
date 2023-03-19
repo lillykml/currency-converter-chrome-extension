@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const targetCurrency = document.getElementById("targetCurrency");
     const convert = document.getElementById("convert");
     const result = document.getElementById("result");
+    const closeButton = document.getElementById("closeButton");
 
     const apiKey= "MdANcUS3Q4meavVL2BqEbQ==jYijBPbvHQrCi72W";
 
@@ -23,13 +24,18 @@ document.addEventListener("DOMContentLoaded", function() {
                 response => response.json()
             )
             .then(data => {
-                console.log(data.new_amount);
                 result.innerHTML = `${amountTotal} ${origin} = ${data.new_amount} ${target}`;
             })
             .catch(error => {
                 console.error("Request failed:", error);
                 result.innerHTML = "An error occured please try again later";
             })
+        })
+    }
+
+    if (closeButton) {
+        closeButton.addEventListener('click', () => {
+            window.close();
         })
     }
 })

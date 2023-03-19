@@ -8,8 +8,15 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <h1>Currency Converter</h1>
     <div class="row">
+        <div class="col-10">
+            <h1 class="title">Currency Converter</h1>
+        </div>
+        <div class="col-2">
+            <button id="closeButton" class="btn btn-close"></button>
+        </div>
+    </div>
+    <div class="row align-items-center">
         <div class="col-8">
             <input type="number" id="amount" placeholder="Enter an amount">
         </div>
@@ -18,28 +25,31 @@
                 <option value="EUR">EUR</option>
                 <option value="CHF">CHF</option>
                 <option value="USD">USD</option>
-                <option value="GPB">GBP</option>
+                <option value="GBP">GBP</option>
                 <option value="JPY">JPY</option>
                 <option value="MAD">MAD</option>
+                <option value="LBP">LBP</option>
+                <option value="LKR">LKR</option>
               </select>
         </div>
     </div>
-    <div class="row">
-        <div class="col-8">
-            <label for="targetCurrency">Convert to: </label>
+    <div class="row align-items-center">
+        <div class="col-8 text-start">
+            <label for="targetCurrency">Target Currency: </label>
         </div>
         <div class="col-4">
             <select id="targetCurrency">
                 <option value="EUR">EUR</option>
                 <option value="CHF">CHF</option>
                 <option value="USD">USD</option>
-                <option value="GPB">GBP</option>
+                <option value="GBP">GBP</option>
                 <option value="JPY">JPY</option>
                 <option value="MAD">MAD</option>
+                <option value="LKR">LKR</option>
               </select>
         </div>
     </div>
-    <button id="convert">Convert</button>
+    <button id="convert" class="btn btn-outline-dark btn-block">Convert</button>
     <div id="result"></div>
   </body>
 </html>

@@ -4,5 +4,20 @@ html {
 
 body {
     width: 300px;
-    background-color: antiquewhite;
+    padding: 20px;
+    background-color: #eeeee4;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.row {
+    padding-bottom: 10px;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 15px;
 }
